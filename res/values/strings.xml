@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contatos</string>
+
+    <!-- MainActivity -->
+    <string name="meus_contatos">Meus Contatos</string>
+
+    <!-- CadastroContatoActivity -->
+    <string name="et_nome">Nome do contato</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_novo_contato">Novo Contato</string>
+    <string name="tv_nome_contato_lista">TextView</string>
+    <string name="alterar_contato">Alterar Contato</string>
+    <string name="excluir_contato">Excluir Contato</string>
+    <string name="novo_nome">Novo nome</string>
+</resources>

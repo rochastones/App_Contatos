@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout de cada item da lista de contatos exibida em MainActivity.
+    Usado pelo ContatoAdapter.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Exibe apenas o nome do contato -->
+    <TextView
+        android:id="@+id/tv_nome_contato_lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="normal"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

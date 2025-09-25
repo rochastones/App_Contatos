@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo usado para inserir ou localizar contato -->
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_nome"
+        android:inputType="textPersonName" />
+
+    <!-- Campo usado para "alterar" contato.-->
+    <EditText
+        android:id="@+id/etNovoNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/novo_nome"
+        android:inputType="textPersonName"
+        android:visibility="gone"/>
+
+    <!-- Botão Salvar (reutilizado para todas as ações: inserir, alterar e excluir) -->
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_salvar"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

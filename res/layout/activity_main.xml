@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    Layout da tela principal (MainActivity).
+    Exibe o título, botões de ação (Novo, Alterar, Excluir)
+    e a lista de contatos cadastrados.
+-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Título da tela -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meus_contatos"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <!-- Botão para adicionar novo contato -->
+        <Button
+            android:id="@+id/btn_novo_contato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_novo_contato"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Botão para alterar contato existente -->
+        <Button
+            android:id="@+id/btn_alterar_contato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alterar_contato"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Botão para excluir contato -->
+        <Button
+            android:id="@+id/btn_excluir_contato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/excluir_contato"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Lista de contatos cadastrados (ligada ao Adapter) -->
+        <ListView
+            android:id="@+id/lv_contatos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

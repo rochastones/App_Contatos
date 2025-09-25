@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item name="btnNovoContato" type="id"/>
+    <item name="lvContatos" type="id"/>
+</resources>
+
